@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benedetti consultoria</title>
+
+    <link rel="stylesheet" href="Benedetti.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<style>.col-1-5 {
+    width: 12.49666666666667%; 
+    flex: 0 0 12.49666666666667%;
+    max-width: 12.49666666666667%; }
+    .col-4-5{
+      width: 37.49666666666667%;
+      flex: 0 0 37.49666666666667%;
+      max-width: 37.49666666666667%;
+    }
+    .col-7-5{
+      width: 62.49666666666667%;
+      flex: 0 0 62.49666666666667%;
+      max-width: 62.49666666666667%;
+    }
+    .col-0-5{
+      width: 4.166666666666667%;
+      flex: 0 0  4.166666666666667%;
+      max-width:  4.166666666666667%;
+    }
+
+    @media screen  and (max-width: 575px) {
+      .wpplogo{left: 85%!important;}
+      .card-body{text-align: center;}
+    .card-text{width: 100%!important;}
+    .title1{top: 160px;}
+    .text1{top: 160px;}
+    .img1{justify-content: center;
+         width: 100%!important;} 
+    .title2{top:210px}
+    .card.mb-3-2{top: 240px;width: 100%;left: 0%;height: 220px !important;}
+    .card.mb-3{top: 240px;width: 100%;left: 0%;height:220px !important;}
+      .card.mb-3-g{top: 240px;}
+    }
+
+    
+@media (min-width: 0px) and (max-width: 480px) {
+  .card-text{margin: 0;}
+  .card-title{margin: 0;}
+      .nav.container-fluid{height: 50vh;}
+  .card{
+    left: -10px;
+    top: 5px;
+  }
+  .card.mb-3{
+    margin-bottom: 10px!important;
+  }
+  .card.mb-3-2{
+    margin-bottom: 10px!important;
+  }
+  .card.mb-3-g{
+    margin-bottom: 10px!important;
+  }
+ 
+   .container-fluid.footer{
+    top: 200px;
+  }
+  .container-fluid.map{
+    top: 200px;
+  }
+  .container-fluid.ff{
+    top: 200px;
+  }
+  .col-sml-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+  .navbutton1,.navbutton3,.navbutton2{
+    font-size: 8px;
+  }
+
+  .card.mb-3{
+    height: 34.559vw;
+  }
+  .img1{
+    width: 100%;
+  }
+  .card.mb-3-g{
+    width: 100%;
+    left: 0%;
+  }
+  .card-text-g{
+    width: 60vw;
+  }
+
+}
+@media (min-width: 225px) and (max-width: 424px) {
+  .card.mb-3-g{height: 450px;}
+
+   .imgc{
+    bottom: 20px;
+  }
+  .cardimg-2{
+    position: relative;
+  top: 150px;
+  }
+  #titleg{
+  position: relative;
+ top: 10px!important;
+}
+.card-text-g{
+  position: relative;
+  top: 10px!important;
+ left: 5px!important;
+width: 100vw!important;
+}
+.card-text-2{
+  position: relative;
+  bottom: 30px!important;
+width: 100px;
+}
+.card-text-3{
+
+  position: relative;
+  bottom: 20px!important;
+width: 100px;
+}
+.card-text-4{
+ 
+  position: relative;
+  bottom: 20px!important;
+width: 90px;
+}
+.ctitulo1 ,.ctitulo2, .ctitulo3{
+  position: relative;
+  bottom: 10px;
+
+  width: 100px;
+}
+}
+
+@media (min-width: 425px) and (max-width: 480px) {
+  .cardimg-2{
+    position: relative;
+    left:50px;
+bottom: 10px;
+  }
+  
+  #titleg{
+  position: relative;
+  left: 30px!important;
+
+}
+.card-text-2{
+  position: relative;
+  bottom: 10px!important;
+width: 100px;
+}
+}
+
+@media (min-width: 481px) and (max-width: 576px) {
+  .cardimg-2{
+    position: relative;
+    left:75px;
+    top: 30px;
+  }
+  
+  #titleg{
+  position: relative;
+  left: 30px!important;
+
+}
+  .card.mb-3{
+    height: 350px!important;
+  }
+  .card.mb-3-2{
+    height: 350px!important;
+  }
+  .card.mb-3-g{
+    width: 100%;
+    left: 0%;
+  }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .cardimg-2{
+    position: relative;
+    left: 15px;
+    top: 10px;
+  }
+  #titleg{
+  position: relative;
+  left: 35px!important;
+
+}
+  .card.mb-3{
+    height: 400px!important;
+  }
+  .card.mb-3-2{
+    height: 400px!important;
+  }
+  .card.mb-3-g{
+    width: 79%;
+    left: 11%;
+  }
+ 
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  
+  #titleg{
+  position: relative;
+  left: 35px!important;
+
+}
+  .card.mb-3{
+    height: 450px!important;
+  }
+  .card.mb-3-2{
+    height: 450px!important;
+  }
+  .card.mb-3-g{
+    width: 92%;
+    left: 2.7%;
+  }
+ 
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #titleg{
+  position: relative;
+  left: 45px!important;
+
+}
+  .card.mb-3{
+    height: 500px!important;
+  }
+  .card.mb-3-2{
+    height: 500px!important;
+  }
+  .card.mb-3-g{
+    width: 89%;
+    left: 3%;
+  }
+ 
+}
+
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+  #titleg{
+  position: relative;
+  left: 45px!important;
+
+}
+  .card.mb-3{
+    height: 550px!important;
+  }
+  .card.mb-3-2{
+    height: 550px!important;
+  }
+  .card.mb-3-g{
+    width: 87%;
+    left: 3.3%;
+  }
+  
+}
+@media (min-width: 1441px) and (max-width: 1660px) {
+  #titleg{
+  position: relative;
+  left: 55px!important;
+
+}
+  .card.mb-3{
+    height: 600px!important;
+  }
+  .card.mb-3-2{
+    height: 600px!important;
+  }
+  .card.mb-3-g{
+    width: 86%;
+    left: 3.3%;
+  }
+  
+}
+@media (min-width: 1661px) and (max-width: 1860px) {
+  #titleg{
+  position: relative;
+  left: 65px!important;
+ 
+}
+  .card.mb-3{
+    height: 650px!important;
+  }
+  .card.mb-3-2{
+    height: 650px!important;
+  }
+  .card.mb-3-g{
+    width: 86%;
+    left: 3.3%;
+  }
+ 
+}
+
+@media (min-width: 1861px) and (max-width: 2000px) {
+  #titleg{
+  position: relative;
+  left: 75px!important;
+}
+  .card.mb-3{
+    height: 750px!important;
+  }
+  .card.mb-3-2{
+    height: 750px!important;
+  }
+
+}
+
+    </style>
+   
+</head>
+<body>
+  <div class="nav container-fluid" id="topo" style=" display: flex;">
+  <div class="row w-100" style="height: 40%;">
+    <div class="col-4 d-flex flex-column align-items-center justify-content-center" style="height: 20%;">
+      <img class="logo" src="../img/logo2.png">
+    </div>
+    <div class="col-2 d-flex flex-column align-items-center justify-content-center" style="height: 50%;">
+      <a href="#sobre"><p class="navbutton1">Sobre nós</p></a>
+    </div>
+    <div class="col-2 d-flex flex-column align-items-center justify-content-center" style="height: 50%;">
+      <a href="#serviços"><p class="navbutton2">Serviços</p></a>
+    </div>
+    <div class="col-2 d-flex flex-column align-items-center justify-content-center" style="height: 50%;">
+      <a href="#contato"><p class="navbutton3">Contato</p></a>
+    </div>
+    <div class="col-2"></div>
+  </div>
+  <div class="row w-100" style="height: 40%;">
+    <div class="col-6 d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
+      <p style="color: #d80000;font-size: clamp(12px,3vw,200px);width: 80%;position: relative;bottom: 50px;">Invista mais tempo no seu 
+      negócio e deixe a burocracia 
+      por nossa conta.</p>
+    </div>
+  </div>
+  <div class="row w-100" style="height: 20%;"></div>
+</div>
+
+      <div class="container-fluid" id="sobre">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-12  col-md-3 col-xl-3 col-lg-3 col-sm-3 col-sml-12"><img src="../img/contadores.jpg" class="img1"> </div>
+          <div class="col-2"></div>
+          <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+            <p class="title1">Quem somos</p>
+  
+            <p class="text1">Há mais de 50 anos, entregamos as melhores e mais completas soluções para cuidar de tudo, desde a abertura até a gestão da contabilidade da sua empresa.
+              <br>
+              <br>
+              Somos uma empresa focada em inovação e em realizar o melhor atendimento possível aos nossos clientes.</p>
+          </div>
+        </div>
+      </div> 
+      <a href="https://wa.me/551129915244"><img src="../img/wpp.png" class="wpplogo"> </a>
+      
+  
+
+    <div class="container-fluid" id="serviços">
+      <div class="row">
+        <div class="col-sml-12 col-12 col-md-12 col-xl-12 col-lg-12 col-sm-12" style="text-align: center;"><p class="title2">Nossos serviços</p>
+        </div>
+        <div class="col-sml-12 col-6 col-md-6 col-xl-6 col-lg-6 col-sm-6" >
+    <div class="card mb-3">
+          <div class="card-body" style="display: flex;
+          flex-direction: column; 
+          align-items: center; 
+          justify-content: center;">
+            <img src="../img/irpf.png" class="cardimg"alt="...">
+            <h5 class="card-title">IRPF/IRPJ</h5>
+            <p class="card-text">Realizamos a declaração do Imposto de Renda, atual ou atrasado, para pessoa física ou jurídica.</p>
+
+          </div>
+        </div>
+        </div>
+    <div class="col-sml-12 col-6 col-md-6 col-xl-6 col-lg-6 col-sm-6">
+      
+    <div class="card mb-3-2">
+      
+          <div class="card-body" style="display: flex;
+          flex-direction: column; 
+          align-items: center; 
+          justify-content: center;">
+           <img src="../img/fiscal.png" class="cardimg"alt="..." >
+            <h5 class="card-title"> Assessoria
+              Fiscal</h5>
+            <p class="card-text">Auxiliamos empresas do Lucro Presumido, empresas optantes pelo Simples Nacional e Microempreendedores Individuais no cumprimento de suas obrigações fiscais
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class=" col-sml-12 col-6 col-md-6 col-xl-6 col-lg-6 col-sm-6">
+  <div class="card mb-3">
+
+        <div class="card-body" style="display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;">
+                <img src="../img/trabalhista.png" class="cardimg"alt="...">
+          <h5 class="card-title">Assessoria Trabalhista</h5>
+          <p class="card-text">
+            • Folha de pagamento<br>
+            • Controle de benefícios<br>
+            • Tratativas com o eSocial.<br>
+            • Administração de documentos.<br>
+            • Admissões e demissões<br>
+            • Recrutamento e seleção.<br>
+            
+            </p>
+        </div>
+      </div>
+      </div>
+  <div class="col-sml-12 col-6 col-md-6 col-xl-6 col-lg-6 col-sm-6">
+  <div class="card mb-3-2">
+        <div class="card-body" style="display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;">
+        <img src="../img/contabil.png" class="cardimg"alt="...">
+          <h5 class="card-title"> Assessoria Contábil</h5>
+          <p class="card-text">Fornecemos análises detalhadas dos registros financeiros da empresa, identificamos áreas problemáticas e oferecemos soluções para melhorar a eficiência financeira.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-1 col-lg-1"></div>
+    <div class="col-12 col-md-10 col-lg-10 col-sml-12 col-sm-12 col-xl-10">
+      <div class="card mb-3-g" style="position: relative; padding: 15px;">
+
+       
+        <img src="../img/condominio.png" class="cardimg-1" alt="Imagem 1" >
+
+        <div class="card-body-special">
+          
+       
+          <h5 class="card-title" id="titleg" 
+              style="position: relative; top: -11.029vw; text-align: center;left: 1.838vw;">
+            Administração de edifícios e condomínios
+          </h5>
+
+          <div class="text-img-container" style="display: flex; align-items: center; gap: 1.103vw;">
+
+          
+            <p class="card-text-g" style="position: relative; top: -9.559vw;left: 13.971vw;">
+              • Emissão e envio de boletos e taxas condominiais.<br>
+              • Administração de taxas de inadimplência<br>
+              • Gerenciamento de questões fiscais e contábeis do condomínio.<br>
+              • Organização e prestação de contas da documentação.<br>
+              • Gerenciamento de fundos de reserva.<br>
+              • Prestação de auxílio em todas as reuniões e assembleias.
+            </p>
+
+            <img src="../img/condominio.png" class="cardimg-2" alt="Imagem 2" >
+          
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+<div class="container-fluid footer" id="contato">
+  <div class="row">
+   <div class="col-2"></div>
+  <div class="col-8" style="display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;"><img src="../img/logo.png" class="ftlogo"></div>
+  <div class="col-2" style="display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;">
+    <a href="#topo"><img src="../img/Up arrow.png" class="uparrow"></a>
+  </div>
+  <div class="col-6" style=" display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;">
+    <p style="color: white;font-size: clamp(12px,3vw,200px);font-weight: bold;width: 75%;">Entre em contato para mais informações</p>
+  </div>
+  <div class="col-6"></div>
+  <div class="col-6"style="display: flex;
+flex-direction: column; 
+align-items: center; 
+justify-content: center;">
+<a href="https://www.google.com/maps/place/Av.+Tucuruvi,+313+-+Tucuruvi,+S%C3%A3o+Paulo+-+SP,+02305-000/@-23.478527,-46.607861,15z/data=!4m6!3m5!1s0x94cef66b8f0abed3:0x2f3c8c0912481cfe!8m2!3d-23.4789602!4d-46.6081613!16s%2Fg%2F11c1c2c172?hl=en&entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D">
+<p style="color: white;font-size: clamp(12px,1.5vw,200px);margin: 0;">Venha nos visitar</p> </a>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.487052683343!2d-46.608161300000006!3d-23.4789602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef66b8f0abed3%3A0x2f3c8c0912481cfe!2sAv.%20Tucuruvi%2C%20313%20-%20Tucuruvi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002305-000!5e0!3m2!1sen!2sbr!4v1741291224575!5m2!1sen!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+<div class="col-0-5"></div>
+<div class="col-4 forms"style=" display: flex;
+flex-direction: column; 
+align-items: center; 
+justify-content: center;">
+   <form id="formulario">
+    <input type="text" placeholder="Nome" required name="nome">
+    <input type="text" placeholder="Sobrenome" required name="sobrenome">  
+    <input type="email" placeholder="E-mail" required name="email">
+    <textarea placeholder="Mensagem" rows="4" required name="mensagem"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  
+  <div class="container-fluid ff" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <a href="https://acasadomicro.com.br/" style="color: black;">
+      <p class="direitos">© 2025 AcasadoMicro todos direitos reservados.</p>
+    </a>
+  </div>
+  
+  <script>
+  document.getElementById("formulario").addEventListener("submit", function(e) {
+    e.preventDefault();
+  
+    const form = new FormData(this);
+  
+    fetch("enviarEmail.php", {
+      method: "POST",
+      body: form
+    })
+    .then(response => response.json())
+    .then(data => {
+      alert(data.mensagem);
+      if (data.status === "sucesso") {
+        document.getElementById("formulario").reset();
+      }
+    })
+    .catch(error => {
+      console.error("Erro:", error);
+      alert("Erro ao enviar o formulário.");
+    });
+  });
+  </script>
+  
+      </body>
+    <!-- Made by [Kevin] | GitHub: https://github.com/KevinSjr -->
+</html>
